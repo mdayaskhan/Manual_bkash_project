@@ -1,0 +1,37 @@
+#This claculator is created by Mohammad Ayas
+def add(a,b):
+    return a+b
+def sub(a,b):
+    return a-b
+def mul(a,b):
+    return a*b
+def dev(a,b):
+    return a/b
+
+while True:
+    print("1.Summmition")
+    print("2.Subtract")
+    print("3.Multiple")
+    print("4.Devide")
+    print("5.Exit")
+    choise = input("Enter your choise(1/2/3/4/5):")
+    if choise=="5":
+        print("Exiting Calculator")
+        break
+    n1 = int(input("Enter the first number:"))
+    n2 = int(input("Enter the second number:"))
+    if choise=="1":
+        print(f"The sum : {n1} + {n2} = {add(n1,n2)}")
+        print("\n")
+    elif choise=="2":
+        print(f"The subtract: {n1} - {n2} = {sub(n1,n2)}")
+        print("\n")
+    elif choise=="3":
+        print(f"The multiple: {n1} * {n2} = {mul(n1,n2)}")
+        print("\n")
+    elif choise=="4":
+        print(f"The devide: {n1} / {n2} = {dev(n1,n2)}")
+        print("\n")
+    else:
+        print("Invalid Value")
+        
